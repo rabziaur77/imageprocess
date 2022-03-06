@@ -6,9 +6,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    img = cv.imread("img.png")
-    img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-    return "Hello World!"
+    img = cv.version.opencv_version
+    # img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+    return img
 
 
 if __name__ == "__main__":
