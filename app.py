@@ -1,5 +1,6 @@
 from flask import Flask
 import cv2 as cv
+from numpy.version import release
 
 app = Flask(__name__)
 
